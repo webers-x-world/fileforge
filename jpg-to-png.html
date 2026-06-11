@@ -163,9 +163,43 @@
   .breadcrumb a { color: var(--accent); text-decoration: none; }
   .breadcrumb a:hover { text-decoration: underline; }
   .breadcrumb svg { width: 12px; height: 12px; opacity: 0.5; }
-  footer { text-align: center; padding: 40px 20px; border-top: 1px solid var(--border); font-size: 0.85rem; color: var(--muted); position: relative; z-index: 1; }
-  footer a { color: var(--accent); text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
+  .footer-links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:16px;
+  margin-bottom:16px;
+}
+
+.footer-links a{
+  font-size:0.78rem;
+  color:var(--muted);
+  text-decoration:none;
+  transition:color .2s;
+}
+
+.footer-links a:hover{
+  color:var(--accent);
+}
+
+footer{
+  position:relative;
+  z-index:1;
+  text-align:center;
+  padding:32px 20px;
+  border-top:1px solid var(--border);
+  font-size:0.78rem;
+  color:var(--muted);
+}
+
+footer a{
+  color:var(--accent);
+  text-decoration:none;
+}
+
+footer a:hover{
+  text-decoration:underline;
+}
 </style>
 </head>
 <body>
@@ -306,7 +340,37 @@
 </main>
 
 <footer>
-  <p>Made with <svg viewBox="0 0 24 24" width="14" height="14" fill="#fc5c9c" stroke="none" style="display:inline-block;vertical-align:middle;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> by <a href="https://webers-x-world.github.io/weber-resume/" target="_blank" rel="noopener">Shaikh Salik</a> &nbsp;·&nbsp; <a href="https://fileforge.webersxworld.in/">FileForge</a> by <strong>Weber's X World</strong> © 2025</p>
+  <nav class="footer-links">
+
+    <a href="https://fileforge.webersxworld.in/">Home</a>
+
+    <a href="https://fileforge.webersxworld.in/png-to-jpg.html">PNG to JPG</a>
+
+    <a href="https://fileforge.webersxworld.in/jpg-to-png.html">JPG to PNG</a>
+
+    <a href="https://fileforge.webersxworld.in/pdf-to-png.html">PDF to PNG</a>
+
+    <a href="https://fileforge.webersxworld.in/png-to-pdf.html">PNG to PDF</a>
+
+    <a href="https://fileforge.webersxworld.in/webp-to-jpg.html">WebP to JPG</a>
+
+    <a href="https://fileforge.webersxworld.in/jpg-to-webp.html">JPG to WebP</a>
+
+    <a href="https://fileforge.webersxworld.in/svg-to-png.html">SVG to PNG</a>
+
+    <a href="https://fileforge.webersxworld.in/avif-to-png.html">AVIF to PNG</a>
+
+  </nav>
+
+  Made with ❤️ by
+  <a href="https://webers-x-world.github.io/weber-resume/" target="_blank">
+    Shaikh Salik
+  </a>
+  ·
+  <a href="https://webers-x-world.github.io/weber-resume/" target="_blank">
+    Weber's X World
+  </a>
+  · FileForge © 2026
 </footer>
 <script>
 document.querySelectorAll('.faq-q').forEach(btn => {
